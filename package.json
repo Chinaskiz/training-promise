@@ -1,0 +1,23 @@
+{
+  "name": "training-promise",
+  "version": "1.0.0",
+  "description": "Introduction to promises and asynchronous JS",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chinaskiz/training-promise.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chinaskiz/training-promise/issues"
+  },
+  "homepage": "https://github.com/Chinaskiz/training-promise#readme",
+  "devDependencies": {
+    "jasmine": "^3.6.4"
+  }
+}
