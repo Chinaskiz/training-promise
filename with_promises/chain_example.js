@@ -1,10 +1,12 @@
 import { throwError } from "../utils.js";
 
 function doSomething(param) {
-    console.log(`doing ${param}...`);
+    setTimeout(() => {
+        console.log(`doing ${param}...`);
+    }, 1000);
 
     return new Promise((resolve, reject) => {
-        if (Math.random() > .3) {
+        if (Math.random() > .2) {
             resolve(param);
         } else {
             reject(param);

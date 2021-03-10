@@ -3,10 +3,14 @@ import { throwError } from "../utils.js";
 function doSomething(param, successCallback, failureCallback) {
     console.log(`doing ${param}...`);
 
-    if(Math.random() > .3) {
-        successCallback(param)
+    if (Math.random() > .3) {
+        setTimeout(() => {
+            successCallback(param);
+        }, 1000);
     } else {
-        failureCallback(param)
+        setTimeout(() => {
+            failureCallback(param);
+        }, 1000);
     }
 }
 
