@@ -1,4 +1,5 @@
-import { log, throwError } from "../utils.js";
+const { log, throwError } = require("../utils");
+
 
 function doSomething(successCallback, failureCallback) {
     console.log("doing something...");

@@ -1,4 +1,5 @@
-import { throwError } from "../utils.js";
+const { throwError } = require("../utils");
+
 
 function doSomething(param) {
     setTimeout(() => {
