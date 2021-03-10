@@ -15,10 +15,16 @@ function doSomething(param) {
     }, 1000);
 }
 
-doSomething("foo")
-    .then(() => doSomething("bar"))
-    .then(() => doSomething("baz"))
-    .then(() => console.log("all done !"))
-    .catch((error) => throwError(error));
+async function run() {
+    try {
+        await doSomething("foo");
+        await doSomething("bar");
+        await doSomething("baz");
+        console.log("all done !");
+    } catch(e) {
+        throwError(e);
+    }
+}
 
-console.log("test");
+run();
+console.log("outside promise chain");

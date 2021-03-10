@@ -11,4 +11,4 @@ function doSomething(successCallback, failureCallback) {
     }
 }
 
-doSomething(log, throwError)
+doSomething(log, throwError);
